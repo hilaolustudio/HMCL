@@ -11,26 +11,26 @@ public class MojangYggdrasilProvider implements YggdrasilProvider {
 
     @Override
     public URL getAuthenticationURL() {
-        return NetworkUtils.toURL("https://authserver.mojang.com/authenticate");
+        return NetworkUtils.toURL("https://minecraft.phyzait.studio/api/yggdrasil/authserver/authenticate");
     }
 
     @Override
     public URL getRefreshmentURL() {
-        return NetworkUtils.toURL("https://authserver.mojang.com/refresh");
+        return NetworkUtils.toURL("https://minecraft.phyzait.studio/api/yggdrasil/authserver/refresh");
     }
 
     @Override
     public URL getValidationURL() {
-        return NetworkUtils.toURL("https://authserver.mojang.com/validate");
+        return NetworkUtils.toURL("https://minecraft.phyzait.studio/api/yggdrasil/authserver/validate");
     }
 
     @Override
     public URL getInvalidationURL() {
-        return NetworkUtils.toURL("https://authserver.mojang.com/invalidate");
+        return NetworkUtils.toURL("https://minecraft.phyzait.studio/api/yggdrasil/authserver/invalidate");
     }
 
     @Override
     public URL getProfilePropertiesURL(UUID uuid) {
-        return NetworkUtils.toURL("https://sessionserver.mojang.com/session/minecraft/profile/" + UUIDTypeAdapter.fromUUID(uuid));
+        return NetworkUtils.toURL("https://minecraft.phyzait.studio/api/yggdrasil/sessionserver/session/minecraft/profile/" + UUIDTypeAdapter.fromUUID(uuid));
     }
 }
