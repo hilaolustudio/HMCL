@@ -42,9 +42,7 @@ jobs:
       - run: gradle test
     - run: gradle build
 
-      - store_artifacts:
-          path: /tmp/artifact-1
-          destination: artifact-file
+     
 
       - store_artifacts:
           path: /tmp/artifacts
