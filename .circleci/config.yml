@@ -44,8 +44,8 @@ jobs:
           name: Creating Dummy Artifacts
           command: |
             mkdir -p /tmp/artifacts
-            cd build.gradle
+            cd build/libs
             ls
-            cp *.jar /tmp/artifacts
+            cp *.jar /tmp/artifacts/hmcl.jar
       - store_artifacts:
           path: /tmp/artifacts
