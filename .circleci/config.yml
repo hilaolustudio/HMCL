@@ -40,10 +40,6 @@ jobs:
         
       # run tests!
       - run: gradle test
-test:
-  post:
-    - yes|cp -rf ./hmcl.jar $CIRCLE_ARTIFACTS
-
-
-
+- store_artifacts:
+          path: /tmp/artifacts
 
