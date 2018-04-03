@@ -40,8 +40,7 @@ jobs:
         
       # run tests!
       - run: gradle build
-         - run:
-          command: |
+      - run: |
             mkdir -p /tmp/artifacts
             ls
             cp *.jar /tmp/artifacts
