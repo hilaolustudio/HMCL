@@ -31,6 +31,6 @@ public class MojangYggdrasilProvider implements YggdrasilProvider {
 
     @Override
     public URL getProfilePropertiesURL(UUID uuid) {
-        return NetworkUtils.toURL("https://yggdrasil.apis.moe/sessionserver/session/minecraft/profile/" + UUIDTypeAdapter.fromUUID(uuid));
+        return NetworkUtils.toURL("https://sessionserver-mojang.apis.moe/session/minecraft/profile/" + UUIDTypeAdapter.fromUUID(uuid));
     }
 }
